@@ -11,6 +11,9 @@ public class Main {
 		
 		String text = Shipment.exec(1);
 		System.out.println(text);
+		
+		String text2 = Shipment.exec(2);
+		System.out.println(text2);
 	}
 
 }

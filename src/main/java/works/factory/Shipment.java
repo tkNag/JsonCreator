@@ -20,8 +20,10 @@ public class Shipment {
 			LogBodyEnum.of(logType).setObject(bp);
 			
 			logString = gson.toJson(bp);
-		} catch (Exception e) {
-			System.out.println();
+		} catch (IllegalArgumentException e1) {
+			System.out.println(e1);
+		} catch (Exception e2) {
+			// TODO: handle exception
 		}
 		
 		return logString;
